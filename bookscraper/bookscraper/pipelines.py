@@ -8,6 +8,8 @@
 # from itemadapter import ItemAdapter
 
 
+"""The itemadapter library is often used in the context of 
+web scraping with frameworks like Scrapy to adapt and manipulate scraped data."""
 from itemadapter import ItemAdapter
 
 class BookscraperPipeline:
@@ -68,8 +70,10 @@ class BookscraperPipeline:
         return item
     
     
-# connect to mysql
+"""The psycopg2 module is a popular library in Python for working with PostgreSQL databases. 
+It allows you to connect to PostgreSQL databases, execute SQL queries, and manage database interactions."""
 import psycopg2
+""" The mysql.connector module is used to connect to and interact with MySQL databases using Python."""
 import mysql.connector
 
 class SaveToMySQLPipeline:

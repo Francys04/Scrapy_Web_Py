@@ -3,10 +3,8 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
+"""Scrapy is a powerful and popular web crawling and web scraping framework that allows you to extract data from websites."""
 import scrapy
-
-
-
 
 class BookItem(scrapy.Item):
     # define the fields for your item here like:

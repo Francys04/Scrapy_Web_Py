@@ -106,9 +106,13 @@
 
 
 # for user_agent
-
+"""The urllib.parse module in Python provides functions for parsing URLs and working with query strings. 
+The urlencode function within this module is used to encode a dictionary or sequence of key-value pairs into a URL-encoded string."""
 from urllib.parse import urlencode
+"""The random module provides functions for generating random numbers and working with random data. 
+The randint function specifically generates a random integer between two specified values, inclusive."""
 from random import randint
+"""The requests library is a popular third-party module used for making HTTP requests to web servers and working with APIs."""
 import requests
 
 class ScrapeOpsFakeUserAgentMiddleware:
@@ -152,9 +156,6 @@ class ScrapeOpsFakeUserAgentMiddleware:
         else:
             self.scrapeops_fake_user_agents_active = True
             
-             
-
-
          
 #    get a random user-agent and singning request header  
     def process_request(self, request, spider):        
